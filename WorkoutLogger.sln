@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutLogger.Core", "src\WorkoutLogger.Core\WorkoutLogger.Core.csproj", "{3C0C2EE2-A3D4-4E67-A679-CAECF8150F34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutLogger.Infrastructure", "src\WorkoutLogger.Infrastructure\WorkoutLogger.Infrastructure.csproj", "{140A1362-C697-4149-90CA-869E39AB394F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B486F8A6-FB0D-46CF-BF5D-F76261C14618}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutLogger.Web", "src\WorkoutLogger.Web\WorkoutLogger.Web.csproj", "{16CE5187-8636-45F4-8617-C1EA91F72B69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C0C2EE2-A3D4-4E67-A679-CAECF8150F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0C2EE2-A3D4-4E67-A679-CAECF8150F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0C2EE2-A3D4-4E67-A679-CAECF8150F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0C2EE2-A3D4-4E67-A679-CAECF8150F34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{140A1362-C697-4149-90CA-869E39AB394F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140A1362-C697-4149-90CA-869E39AB394F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140A1362-C697-4149-90CA-869E39AB394F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140A1362-C697-4149-90CA-869E39AB394F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16CE5187-8636-45F4-8617-C1EA91F72B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CE5187-8636-45F4-8617-C1EA91F72B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CE5187-8636-45F4-8617-C1EA91F72B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CE5187-8636-45F4-8617-C1EA91F72B69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25F90199-ED86-4A67-83BD-0AAB60D01CE2}
+	EndGlobalSection
+EndGlobal
