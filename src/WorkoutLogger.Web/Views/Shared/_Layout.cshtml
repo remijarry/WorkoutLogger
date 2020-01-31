@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/fonts/feather/feather.css" />
+
+    @*KENDO*@
+
+    <link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.bootstrap-v4.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://kendo.cdn.telerik.com/2020.1.114/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.1.114/js/jszip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.1.114/js/kendo.all.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.1.114/js/kendo.aspnetmvc.min.js"></script>
 </head>
 <body>
     <div class="header">
 
-        <!-- Image -->
-        <img src="~/img/covers/profile-cover-1.jpg" class="header-img-top" alt="...">
+        <div class="container">
+            <!-- Image -->
+            <img src="~/img/covers/profile-cover-1.jpg" class="header-img-top" alt="...">
+        </div>
 
-        <div class="container-fluid">
+        <div class="container">
 
             <!-- Body -->
             <div class="header-body mt-n5 mt-md-n6">
@@ -47,22 +57,27 @@
                         <!-- Nav -->
                         <ul class="nav nav-tabs nav-overflow header-tabs">
                             <li class="nav-item">
-                                <a href="profile-posts.html" class="nav-link active">
+                                <a asp-action="Index" asp-controller="Home" class="nav-link active">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-action="Index" asp-controller="LogBook" class="nav-link">
                                     Logbook
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="profile-groups.html" class="nav-link">
+                                <a asp-action="Index" asp-controller="Barbell" class="nav-link">
                                     Barbell PRs
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="profile-files.html" class="nav-link">
+                                <a asp-action="Index" asp-controller="Benchmark" class="nav-link">
                                     Benchmarks
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="profile-subscribers.html" class="nav-link">
+                                <a asp-action="Index" asp-controller="Friends" class="nav-link">
                                     Friends
                                 </a>
                             </li>
@@ -77,7 +92,7 @@
     @RenderBody()
 
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
